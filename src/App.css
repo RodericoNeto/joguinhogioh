@@ -3,7 +3,7 @@
 }
 
 .cardsContainer{
-  margin: 80px;
+  margin: 16px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

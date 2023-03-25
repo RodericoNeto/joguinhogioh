@@ -2,7 +2,6 @@
   text-align: center;
   background-image: linear-gradient(to bottom right,rgb(84, 43, 106), rgb(189, 18, 126));
   height: 100vh;
-  /* padding: 40px; */
 }
 
 
@@ -64,23 +63,28 @@
   }
 
   .cardShape{
-    width: 112px;
-    height: 112px;
+    width: 104px;
+    height: 104px;
   }
 }
 
 /* MOBILE PEQUENO */
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 368px) {
+
+  .App {
+    height: 120vh;
+  }
+
   .cardsContainerGrid {
-    height: 100vh;
+    height: 120vh;
     display: grid;
     grid-template-rows: 16.5% 16.5% 16.5% 16.5% 16.5% 16.5%;
     grid-template-columns: 50% 50%;
   }
 
   .cardShape{
-    width: 96px;
-    height: 96px;
+    width: 92px;
+    height: 92px;
   }
 }
 

@@ -1,18 +1,93 @@
 .App {
   text-align: center;
-}
-
-.cardsContainer{
-  margin: 16px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  background-image: linear-gradient(to bottom right,rgb(84, 43, 106), rgb(189, 18, 126));
+  height: 100vh;
+  /* padding: 40px; */
 }
 
 
 
-@media (prefers-reduced-motion: no-preference) {
+.cardsContainerGrid {
+  margin: auto;
+  /* padding-top: 48px; */
+  width: 95vw;
+  height: 80vh;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 16.5% 16.5% 16.5% 16.5% 16.5% 16.5%;
+}
+
+
+
+.cardShape{
+  border: 2px solid rgb(255, 255, 255);
+  margin: auto;
+  width: 160px;
+  height: 160px;
+  border-radius: 24px;
+  cursor: pointer;
+
+  background-repeat: repeat; 
+  background-size: cover;
+
+  transition: 600ms;
+}
+
+.cardShape:hover{
+  border: 2px solid rgb(251, 255, 2);
+  transform: scale(1.2);
+}
+
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 1124px) {
+  .cardsContainerGrid {
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+
+  .cardShape{
+    width: 140px;
+    height: 140px;
+  }
+}
+
+
+/* MOBILE GRANDE */
+@media screen and (max-width: 767px){
+  .cardsContainerGrid {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 33% 33% 33%;
+  }
+
+  .cardShape{
+    width: 112px;
+    height: 112px;
+  }
+}
+
+/* MOBILE PEQUENO */
+@media screen and (max-width: 376px) {
+  .cardsContainerGrid {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 16.5% 16.5% 16.5% 16.5% 16.5% 16.5%;
+    grid-template-columns: 50% 50%;
+  }
+
+  .cardShape{
+    width: 96px;
+    height: 96px;
+  }
+}
+
+
+
+
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
@@ -25,4 +100,5 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
+

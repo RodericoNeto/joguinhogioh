@@ -20,7 +20,7 @@ import CardButton from './components/CardButton';
 function App() {
   return (
     <div className="App">
-      <div className='cardsContainer'>
+      <div className='cardsContainerGrid'>
         <CardButton
         audio={audioNoel}
         img={imgNoel}
@@ -29,7 +29,7 @@ function App() {
         audio={audioGato}
         img={imgGato}
         />
-                <CardButton
+        <CardButton
         audio={audioPiscina}
         img={imgPiscina}
         />
@@ -44,6 +44,30 @@ function App() {
         <CardButton
         audio={audioBanana}
         img={imgBanana}
+        />
+        <CardButton
+        audio={audioNoel}
+        img={imgNoel}
+        />
+        <CardButton
+        audio={audioNoel}
+        img={imgNoel}
+        />
+        <CardButton
+        audio={audioNoel}
+        img={imgNoel}
+        />
+                <CardButton
+        audio={audioNoel}
+        img={imgNoel}
+        />
+        <CardButton
+        audio={audioNoel}
+        img={imgNoel}
+        />
+        <CardButton
+        audio={audioNoel}
+        img={imgNoel}
         />
       </div>
     </div>

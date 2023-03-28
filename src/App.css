@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-image: linear-gradient(to bottom right,rgb(84, 43, 106), rgb(189, 18, 126));
+  background-image: linear-gradient(to bottom right,rgb(25, 106, 124), rgb(122, 9, 80));
   height: 100vh;
 }
 
@@ -28,6 +28,7 @@
 
   background-repeat: repeat; 
   background-size: cover;
+  background-position: center;
 
   transition: 600ms;
 }
@@ -72,11 +73,11 @@
 @media screen and (max-width: 368px) {
 
   .App {
-    height: 120vh;
+    height: 100vh;
   }
 
   .cardsContainerGrid {
-    height: 120vh;
+    height: 100vh;
     display: grid;
     grid-template-rows: 16.5% 16.5% 16.5% 16.5% 16.5% 16.5%;
     grid-template-columns: 50% 50%;
@@ -84,10 +85,18 @@
 
   .cardShape{
     width: 92px;
-    height: 92px;
+    height: 64px;
   }
 }
 
+/* MODO DEITADO */
+@media screen and (max-height: 500px){
+  .cardShape{
+    width: 92px;
+    height: 64px;
+  }
+  
+}
 
 
 
